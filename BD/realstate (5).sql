@@ -514,7 +514,7 @@ CREATE TABLE `tblusuarios` (
 --
 
 INSERT INTO `tblusuarios` (`id`, `Nombres`, `Correo`, `Contraseña`, `rol`) VALUES
-(40, 'juan diego', 'juandiegorubiorodriguez14@gmail.com', '71cb80b7afea4fac72e89b782a4450d0', 'usuario'),
+(40, 'juan diego', 'juancho@gmail.com', '71cb80b7afea4fac72e89b782a4450d0', 'usuario'),
 (85, 'isagi', 'solobluelock@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', 'administrador');
 
 --
