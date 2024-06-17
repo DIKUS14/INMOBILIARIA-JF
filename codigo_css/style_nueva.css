@@ -1,0 +1,93 @@
+/* Reinicia márgenes y padding para todos los elementos y establece box-sizing a border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para el formulario y cuerpo de la página */
+body {
+    font-family: arial, "lato", sans-serif;
+    /* Define la familia de fuentes para el texto del cuerpo */
+    background-image: url(../imagenes/imagenblanca.jpg);
+    /* Imagen de fondo */
+    background-size: cover;
+    /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-size: 100% 100%;
+    /* Ajusta la imagen de fondo para que cubra el 100% de ancho y alto */
+    background-repeat: no-repeat;
+    /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo mientras se desplaza */
+}
+
+/* Estilos para las imágenes */
+img {
+    border: 1px;
+    /* Define el borde de la imagen (grosor de 1 píxel) */
+    border-color: black;
+    /* Color del borde de la imagen */
+    max-width: 36%;
+    /* Asegura que la imagen no sobrepase el 36% del ancho del contenedor */
+    height: auto;
+    /* Ajusta automáticamente la altura según el ancho para mantener la proporción */
+    display: block;
+    /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto;
+    /* Centrar la imagen horizontalmente */
+    border-radius: 50% 5px;
+
+}
+
+.containeri {
+    width: 530px 5%;
+    /* Ancho fijo */
+    height: 400px;
+    /* Altura automática */
+    background-color: rgba(233, 238, 244, 0.877);
+    position: absolute;
+    /* Posición absoluta */
+    top: 50%;
+    /* Centrar verticalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centrar con transformación */
+    border-radius: 10px;
+    /* Radio de borde para esquinas redondeadas */
+    box-shadow: 3px 3px 5px;
+    /* Sombra */
+    padding: 20px;
+    /* Relleno interior */
+
+}
+
+.submit {
+    width: 55%;
+    padding: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242));
+    /* Gradiente de fondo */
+}
+
+.welcome-heading {
+    margin: 15px auto;
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(91, 129, 241);
+}
+
+.input-box {
+    width: 300px;
+    height: 30px;
+    margin: 15px auto;
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para el ícono */
+.btn i {
+    font-size: 1.25rem;
+    /* Tamaño del ícono */
+}

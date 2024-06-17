@@ -1,0 +1,425 @@
+/* Importar la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Resetear márgenes y padding y establecer el box-sizing a border-box */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+select,
+button {
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+    padding: 0;
+    /* Elimina el padding por defecto */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    /* Establece la fuente del texto a Arial o, si no está disponible, a una fuente sans-serif */
+    background-color: #f5f5f5;
+    /* Establece un color de fondo gris claro */
+}
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 1200px;
+    /* Establece el ancho máximo del contenedor a 1200 píxeles */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    /* Añade un padding de 20 píxeles alrededor del contenido del contenedor */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #ffffff;
+    /* Establece el color de fondo del encabezado a blanco */
+    color: #6b6969;
+    /* Establece el color del texto del encabezado a gris oscuro */
+    text-align: center;
+    /* Centra el texto horizontalmente dentro del encabezado */
+}
+
+/* ESTILOS GENERALES */
+.tipo-letra {
+    font-family: 'Mina', sans-serif;
+    /* Aplica la fuente "Mina" a los elementos con esta clase */
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+}
+
+nav ul li {
+    display: inline;
+    /* Muestra los elementos de la lista en línea, uno al lado del otro */
+    margin-right: 20px;
+    /* Añade un margen a la derecha de cada elemento de la lista */
+}
+
+/* Estilos de la marca de la inmobiliaria en la barra de navegación */
+.navbar-brand span {
+    font-family: 'Lilita One', sans-serif;
+    /* Aplica la fuente "Lilita One" a los elementos <span> dentro de .navbar-brand */
+    font-size: 30px;
+    /* Establece el tamaño de la fuente a 30 píxeles */
+    margin-left: 5rem;
+    /* Añade un margen a la izquierda de 5 rems */
+    color: rgb(45, 205, 249);
+    /* Establece el color del texto a un tono de azul */
+}
+
+/* Estilos de la sección de búsqueda de propiedades */
+.search {
+    background-color: #fff;
+    /* Establece el color de fondo a blanco */
+    padding: 20px;
+    /* Añade un padding de 20 píxeles alrededor del contenido */
+    margin: 20px 0;
+    /* Añade un margen de 20 píxeles en la parte superior e inferior */
+    border-radius: 5px;
+    /* Redondea las esquinas del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra para dar profundidad */
+}
+
+/* Estilos personalizados para el grupo de formulario */
+.custom-form-group {
+    display: flex;
+    /* Utiliza Flexbox para organizar los elementos hijos en línea */
+    margin-bottom: 15px;
+    /* Añade un margen inferior de 15 píxeles */
+}
+
+.custom-form-group .form-control {
+    flex: 1;
+    /* Permite que el elemento tome todo el espacio disponible */
+    margin-right: 10px;
+    /* Añade un margen a la derecha de 10 píxeles */
+}
+
+.custom-form-group .btn {
+    width: 100px;
+    /* Establece un ancho fijo para el botón */
+}
+
+/* Estilos del título de la sección de búsqueda */
+.search h2 {
+    font-size: 24px;
+    /* Establece el tamaño de la fuente del título a 24 píxeles */
+    margin-bottom: 10px;
+    /* Añade un margen inferior de 10 píxeles */
+}
+
+/* Estilos del formulario de búsqueda */
+.search form {
+    display: flex;
+    /* Utiliza Flexbox para organizar los elementos en línea */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+    gap: 10px;
+    /* Añade un espacio de 10 píxeles entre los elementos */
+}
+
+/* Estilos de los campos de entrada, select y botón de búsqueda */
+.search input[type="text"],
+.search input[type="number"],
+.search select {
+    flex: 1;
+    /* Permite que el elemento tome todo el espacio disponible */
+    padding: 10px;
+    /* Añade un padding de 10 píxeles */
+    border: 1px solid #ccc;
+    /* Añade un borde gris claro */
+    border-radius: 5px;
+    /* Redondea las esquinas del campo */
+}
+
+.search button {
+    padding: 10px 20px;
+    /* Añade un padding de 10 píxeles en la parte superior e inferior, y 20 píxeles en los laterales */
+    background-color: #333;
+    /* Establece el color de fondo a negro */
+    color: #fff;
+    /* Establece el color del texto a blanco */
+    border: none;
+    /* Elimina el borde del botón */
+    border-radius: 5px;
+    /* Redondea las esquinas del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón para indicar que es clicable */
+}
+
+/* Estilos de la lista de propiedades */
+.property-list {
+    display: flex;
+    /* Utiliza Flexbox para organizar los elementos en línea */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+    gap: 20px;
+    /* Añade un espacio de 20 píxeles entre los elementos */
+}
+
+/* Estilos de cada propiedad individual */
+.property {
+    flex: 1;
+    /* Permite que el elemento tome todo el espacio disponible */
+    background-color: #fff;
+    /* Establece el color de fondo a blanco */
+    border: 1px solid #ccc;
+    /* Añade un borde gris claro */
+    border-radius: 5px;
+    /* Redondea las esquinas del contenedor */
+    padding: 20px;
+    /* Añade un padding de 20 píxeles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra para dar profundidad */
+}
+
+/* Estilos de las imágenes de las propiedades */
+.property img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos de la imagen del pie de página */
+img n {
+    width: 30%;
+    /* Establece el ancho de la imagen al 30% del contenedor */
+    max-width: 100px;
+    /* Establece un ancho máximo de 100 píxeles */
+    margin: 20px auto;
+    /* Centra la imagen horizontalmente y añade un margen vertical de 20 píxeles */
+    display: block;
+    /* Muestra la imagen como un bloque */
+    right: 1%;
+    /* Posiciona la imagen a la derecha */
+}
+
+/* Estilos específicos de una imagen con src="logo2.png" */
+img[src="logo2.png"] {
+    width: 30%;
+    /* Establece el ancho de la imagen al 30% del contenedor */
+    max-width: 266px;
+    /* Establece un ancho máximo de 266 píxeles */
+    position: absolute;
+    /* Posiciona la imagen de forma absoluta */
+    top: 0;
+    /* Posiciona la imagen en la parte superior */
+    left: 0;
+    /* Posiciona la imagen en la parte izquierda */
+}
+
+/* Estilos del carrusel de imágenes principal */
+/* Slider-casas */
+.carousel-item img {
+    width: 100%;
+    /* Asegura que la imagen cubra todo el ancho del contenedor */
+    height: 60vh;
+    /* Establece una altura fija del 60% de la altura de la ventana */
+    object-fit: cover;
+    /* Hace que la imagen se recorte para cubrir el espacio disponible, manteniendo su aspecto */
+}
+
+.carousel-item {
+    position: relative;
+    /* Establece una posición relativa para permitir la colocación de elementos hijos con posición absoluta */
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Asegura que la imagen cubra todo el ancho del contenedor */
+    height: 60vh;
+    /* Ajusta la altura de la imagen según tus necesidades */
+    object-fit: cover;
+    /* Hace que la imagen se recorte para cubrir el espacio disponible, manteniendo su aspecto */
+    filter: brightness(70%);
+    /* Aplica un efecto de brillo a la imagen */
+}
+
+.carousel-caption {
+    position: absolute;
+    /* Posiciona el elemento de forma absoluta dentro de su contenedor */
+    top: 60%;
+    /* Posiciona el elemento al 60% desde la parte superior del contenedor */
+    left: 50%;
+    /* Posiciona el elemento al 50% desde la parte izquierda del contenedor */
+    transform: translate(-50%, -50%);
+    /* Centra el elemento horizontal y verticalmente */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    padding: 20px;
+    /* Añade un padding de 20 píxeles */
+    color: #fff;
+    /* Establece el color del texto a blanco */
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+    /* Establece el tamaño de la fuente del título a 30 píxeles */
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    /* Establece el tamaño de la fuente del párrafo a 18 píxeles */
+}
+
+.carrusel-imagen1 .carousel-caption {
+    position: absolute;
+    /* Posiciona el elemento de forma absoluta dentro de su contenedor */
+    top: 60%;
+    /* Alinea el texto en el centro verticalmente */
+    left: 50%;
+    /* Alinea el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centra el elemento horizontal y verticalmente */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    padding: 20px;
+    /* Añade un padding de 20 píxeles */
+    color: #fff;
+    /* Establece el color del texto a blanco */
+    width: 80%;
+    /* Establece un ancho del 80% del contenedor */
+}
+
+.carrusel-imagen3 .carousel-caption {
+    top: 60%;
+    /* Ajusta la posición vertical del texto */
+    right: 10%;
+    /* Cambia esto para ajustar la posición horizontal */
+    transform: translateY(-50%);
+    /* Centra el texto verticalmente */
+    text-align: right;
+    /* Alinea el texto a la derecha */
+}
+
+/* Estilos del pie de página */
+.finfooter {
+    background-color: #050404;
+    /* Establece el color de fondo a negro */
+    color: #ccc;
+    /* Establece el color del texto a gris claro */
+}
+
+/* Estilos de la lista de iconos de contacto */
+.contact-list-u {
+    margin-left: 50px;
+    /* Añade un margen a la izquierda de 50 píxeles */
+}
+
+/* Estilos del texto del pie de página */
+.text-footer {
+    font-family: 'Lilita One', sans-serif;
+    /* Aplica la fuente "Lilita One" al texto */
+    font-size: 30px;
+    /* Establece el tamaño de la fuente a 30 píxeles */
+    color: rgb(45, 205, 249);
+    /* Establece el color del texto a un tono de azul */
+}
+
+/* Estilos del botón de guardado de las tarjetas de propiedad */
+.favorite {
+    background-color: transparent;
+    /* Establece el fondo a transparente */
+    border: none;
+    /* Elimina el borde del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón para indicar que es clicable */
+    padding: 5px;
+    /* Añade un padding de 5 píxeles */
+    margin-right: 10px;
+    /* Añade un margen a la derecha de 10 píxeles */
+}
+
+.favorite:hover {
+    background-color: #f0f0f0;
+    /* Cambia el fondo a gris claro al pasar el cursor por encima */
+    border-radius: 5px;
+    /* Redondea las esquinas del botón */
+}
+
+.bookmark,
+.bookmark-fill {
+    font-size: 1.5rem;
+    /* Establece el tamaño del icono a 1.5 rem */
+}
+
+.bookmark {
+    display: inline;
+    /* Muestra el icono en línea */
+}
+
+.bookmark.active {
+    display: none;
+    /* Oculta el icono cuando está activo */
+}
+
+.bookmark-fill {
+    display: none;
+    /* Oculta el icono por defecto */
+    color: rgb(83, 170, 241);
+    /* Establece el color del icono a un tono de azul */
+}
+
+.bookmark-fill.active {
+    display: inline;
+    /* Muestra el icono cuando está activo */
+}
+
+/* Estilos de la información */
+.info {
+    background-color: #fff;
+    /* Establece el color de fondo a blanco */
+    padding: 20px;
+    /* Añade un padding de 20 píxeles */
+    margin: 20px 0;
+    /* Añade un margen de 20 píxeles en la parte superior e inferior */
+    border-radius: 5px;
+    /* Redondea las esquinas del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra para dar profundidad */
+}
+
+/* Estilos de la barra de navegación */
+.dropdown-menu .dropdown-item .bi {
+    margin-right: 8px;
+    /* Añade un margen a la derecha de 8 píxeles */
+}
+
+.icon {
+    margin-right: 8px;
+    /* Añade un margen a la derecha de 8 píxeles */
+}
+
+/* Estilos de los anuncios */
+.custom-img-fluid {
+    border-radius: 15px;
+    /* Redondea las esquinas de la imagen */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    /* Añade una sombra para dar profundidad */
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.custom-container {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin: 20px;
+    /* Añade un margen de 20 píxeles alrededor del contenedor */
+}

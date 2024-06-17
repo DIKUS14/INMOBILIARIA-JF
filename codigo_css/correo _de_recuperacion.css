@@ -1,0 +1,33 @@
+/* Aplica estilos al cuerpo del documento */
+body {
+    /* Establece la fuente del texto a Arial o, si no está disponible, a una fuente sans-serif */
+    font-family: Arial, sans-serif;
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* Aplica estilos al contenedor principal */
+.container {
+    /* Centra el contenedor horizontalmente en la página */
+    margin: 0 auto;
+    /* Define el ancho máximo del contenedor a 600 píxeles */
+    max-width: 600px;
+    /* Agrega un relleno interno de 20 píxeles en todos los lados */
+    padding: 20px;
+    /* Establece el color de fondo del contenedor a un tono gris claro */
+    background-color: #f2f2f2;
+    /* Redondea las esquinas del contenedor con un radio de 10 píxeles */
+    border-radius: 10px;
+}
+
+/* Aplica estilos a los elementos <h1> */
+h1 {
+    /* Establece el color del texto a un tono gris oscuro */
+    color: #333333;
+}
+
+/* Aplica estilos a los elementos con la clase .message */
+.message {
+    /* Agrega un margen superior de 20 píxeles */
+    margin-top: 20px;
+}

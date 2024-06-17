@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Estilos básicos para el formulario */
+body {
+    font-family: arial, "lato", sans-serif;
+    background-image: url(../imagenes/imagenblanca.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    border: 1px;
+    /* Borde de 1 píxel */
+    border-color: black;
+    max-width: 36%;
+    /* Ancho máximo del 36% */
+    height: auto;
+    /* Altura automática */
+    display: block;
+    /* Convertir la imagen en bloque */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    border-radius: 50% 5px;
+
+}
+
+/* Estilos para el contenedor principal */
+.containeri {
+    width: 390px;
+    /* Ancho fijo */
+    height: 480px;
+    /* Altura automática */
+    background-color: rgba(233, 238, 244, 0.877);
+    position: absolute;
+    /* Posición absoluta */
+    top: 50%;
+    /* Centrar verticalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centrar con transformación */
+    border-radius: 10px;
+    /* Radio de borde para esquinas redondeadas */
+    box-shadow: 3px 3px 5px;
+    /* Sombra */
+    padding: 20px;
+    /* Relleno interior */
+
+}
+
+
+form {
+    width: 300px;
+    margin: 50px auto;
+}
+
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.submit {
+    width: 60%;
+    padding: 6px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242));
+    /* Gradiente de fondo */
+}
+
+.register-now {
+    text-align: center;
+    /* Alinear al centro */
+    margin-top: 20px;
+    /* Espacio arriba */
+    font-weight: bold;
+    /* Negrita */
+    text-decoration: none;
+    /* Sin decoración de texto */
+}
+
+.welcome-heading {
+    font-size: 1.6rem;
+    /* Tamaño de fuente */
+    text-align: center;
+    /* Alinear al centro */
+    text-transform: capitalize;
+    /* Transformar en mayúsculas */
+    color: rgb(91, 129, 241);
+    /* Color de texto */
+}
+
+.link {
+    color: rgb(0, 132, 255);
+}

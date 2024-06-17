@@ -1,0 +1,85 @@
+/* Estilos de la creación del inmueble en create.php */
+
+/* Aplica estilos al contenedor de vista previa de la imagen */
+.image-preview div {
+  width: 100px;
+  /* Establece un ancho fijo para todas las imágenes */
+  height: 100px;
+  /* Establece un alto fijo para todas las imágenes */
+  margin: 5px;
+  /* Agrega un margen alrededor de cada imagen */
+  display: inline-block;
+  /* Permite que los contenedores de imagen se alineen uno al lado del otro */
+  position: relative;
+  /* Establece una posición relativa para permitir la colocación de elementos hijos con posición absoluta */
+  overflow: hidden;
+  /* Oculta cualquier parte de la imagen que exceda el tamaño del contenedor */
+  border: 1px solid #ddd;
+  /* Añade un borde alrededor de las imágenes para mejorar la estética */
+  border-radius: 10px;
+  /* Redondea las esquinas del contenedor de la imagen */
+}
+
+/* Aplica estilos a las imágenes dentro del contenedor de vista previa */
+.image-preview img {
+  width: 100%;
+  /* Asegura que la imagen cubra el ancho del contenedor */
+  height: 100%;
+  /* Asegura que la imagen cubra el alto del contenedor */
+  object-fit: cover;
+  /* Hace que la imagen se recorte para cubrir el espacio disponible, manteniendo su aspecto */
+  border-radius: 10px;
+  /* Redondea las esquinas de las imágenes */
+  transition: opacity 0.3s ease;
+  /* Suaviza la transición de la opacidad */
+}
+
+/* Aplica estilos a las imágenes al pasar el mouse sobre ellas */
+.image-preview img:hover {
+  opacity: 0.6;
+  /* Cambia la opacidad de la imagen al pasar el mouse */
+}
+
+/* Aplica estilos al botón de eliminación (X) */
+.delete-btn {
+  position: absolute;
+  /* Permite colocar el botón en una posición específica dentro de su contenedor */
+  top: 0px;
+  /* Posiciona la X en la parte superior del contenedor */
+  right: 0px;
+  /* Posiciona la X en la parte derecha del contenedor */
+  width: 15px;
+  /* Establece un ancho fijo para el botón de eliminación */
+  height: 15px;
+  /* Establece un alto fijo para el botón de eliminación */
+  border-radius: 50%;
+  /* Redondea el botón para que sea circular */
+  border: none;
+  /* Elimina el borde del botón */
+  background-color: #ff0000;
+  /* Establece el color de fondo inicial del botón */
+  color: white;
+  /* Establece el color del texto del botón */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón para indicar que es clicable */
+  font-weight: bold;
+  /* Hace que el texto del botón sea negrita */
+  display: flex;
+  /* Utiliza Flexbox para alinear el contenido del botón */
+  align-items: center;
+  /* Centra el contenido verticalmente */
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  z-index: 10;
+  /* Asegura que el botón esté por encima de otros elementos superpuestos */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Suaviza la transición del color de fondo y del tamaño del botón */
+}
+
+/* Aplica estilos al botón de eliminación al pasar el mouse sobre él */
+.delete-btn:hover {
+  background-color: #cc0000;
+  /* Oscurece el color de fondo al pasar el mouse */
+  transform: scale(1.1);
+  /* Aumenta ligeramente el tamaño del botón al pasar el mouse */
+}

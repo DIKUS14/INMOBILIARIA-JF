@@ -1,0 +1,90 @@
+/* Reinicia márgenes, padding y establece box-sizing a border-box para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para imágenes */
+img {
+    border: 1px;  /* Grosor del borde de la imagen */
+    border-radius: 1px;  /* Radio de borde para esquinas redondeadas */
+    max-width: 50%;  /* Establece el ancho máximo de la imagen */
+    height: auto;  /* Permite que la altura se ajuste automáticamente según el ancho */
+    display: block;  /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto;  /* Centra la imagen horizontalmente */
+    border-radius: 50% 5px;  /* Aplica un radio de borde elíptico (redondeado en la parte superior) */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: arial, "lato", sans-serif;  /* Define la familia de fuentes para el texto del cuerpo */
+    background-image: url(../imagenes/imagenblanca.jpg);  /* Imagen de fondo */
+    background-size: cover;  /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-size: 100% 100%;  /* Ajusta la imagen de fondo para que cubra el 100% de ancho y alto */
+    background-repeat: no-repeat;  /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed;  /* Fija la imagen de fondo mientras se desplaza */
+}
+
+/* Estilos para el contenedor principal */
+.containero {
+    width: 400px;  /* Ancho fijo del contenedor */
+    height: 600px;  /* Altura fija del contenedor */
+    background-color: rgba(233, 238, 244, 0.877);  /* Color de fondo con transparencia */
+    position: absolute;  /* Posición absoluta para centrar el contenedor */
+    top: 50%;  /* Centra verticalmente */
+    left: 50%;  /* Centra horizontalmente */
+    transform: translate(-50%, -50%);  /* Centra el contenedor usando transformación */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 3px 3px 5px;  /* Sombra del contenedor */
+    padding: 20px;  /* Relleno interior */
+}
+
+/* Estilos para el título de bienvenida */
+.welcome-heading {
+    font-size: 1.3rem;  /* Tamaño de la fuente */
+    text-align: center;  /* Alineación central del texto */
+    text-transform: capitalize;  /* Capitaliza la primera letra de cada palabra */
+    color: rgb(91, 129, 241);  /* Color del texto */
+}
+
+/* Estilos para las casillas de entrada */
+.inputBox {
+    width: 80%;  /* Ancho del 80% del contenedor */
+    height: 30px;  /* Altura fija */
+    margin: 5px;  /* Espacio alrededor de la casilla de entrada */
+    margin-bottom: 10px;  /* Espacio inferior adicional */
+    border-radius: 4px;  /* Bordes redondeados */
+    outline: none;  /* Sin contorno al recibir foco */
+    border: none;  /* Sin borde */
+    padding-left: 10px;  /* Relleno interior a la izquierda */
+}
+
+/* Estilos para el botón */
+.boton {
+    display: block;  /* Convertir en bloque para poder centrarlo */
+    margin: 0 auto;  /* Centra el botón horizontalmente */
+    padding: 8px 92px;  /* Relleno interno del botón */
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242));  /* Gradiente de fondo */
+    border-radius: 40px;  /* Bordes redondeados */
+    text-decoration: none;  /* Sin subrayado */
+    color: #001bb3;  /* Color del texto */
+    text-transform: capitalize;  /* Capitaliza la primera letra de cada palabra */
+}
+
+
+/* Estilos para los campos de entrada de texto, correo electrónico y contraseña */
+.inputBox input[type="text"],
+.inputBox input[type="email"],
+.inputBox input[type="password"] {
+    width: 120%;  /* Ancho del 120% del contenedor (posiblemente para ajustar el diseño) */
+    height: 40px;  /* Altura fija */
+    border-radius: 5px;  /* Bordes redondeados */
+    border: 0.5px solid #ced4da;  /* Borde del campo de entrada */
+    padding: 10px;  /* Relleno interno */
+}
+.input-group{
+    width: 120%; 
+    padding-left: 15px; 
+    padding-right: 12px;
+}

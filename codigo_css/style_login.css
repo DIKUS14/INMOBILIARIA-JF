@@ -1,0 +1,132 @@
+/* Reinicia márgenes y padding para todos los elementos y establece box-sizing a border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif, "lato", sans-serif; /* Define la familia de fuentes para el texto del cuerpo */
+    background-image: url(../imagenes/imagenblanca.jpg); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-size: 100% 100%; /* Ajusta la imagen de fondo para que cubra el 100% de ancho y alto */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza */
+}
+
+/* Estilos para las imágenes */
+img {
+    border: 1px; /* Define el borde de la imagen (grosor y color predeterminado) */
+    border-radius: 1px; /* Añade esquinas redondeadas al borde */
+    max-width: 50%; /* Asegura que la imagen no sobrepase el 50% del ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura según el ancho para mantener la proporción */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente en su contenedor */
+    border-radius: 50% 5px; /* Define un radio de borde específico, creando un efecto especial de bordes redondeados */
+}
+
+/* Estilos para el contenedor principal */
+.containere {
+    width: 350px; /* Ancho fijo del contenedor */
+    height: 610px; /* Altura fija del contenedor */
+    background-color: rgba(233, 238, 244, 0.877); /* Color de fondo con transparencia */
+    position: absolute; /* Posiciona el contenedor de manera absoluta */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición del contenedor para que quede perfectamente centrado */
+    display: flex; /* Usa flexbox para el layout interno */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 3px 3px 5px; /* Sombra del contenedor para darle un efecto de elevación */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-btn {
+    margin: 10px auto; /* Añade margen para centrar horizontalmente el botón y espacio arriba y abajo */
+    padding: 8px 92px; /* Relleno interno del botón */
+    background-image: linear-gradient(to left, rgb(95, 95, 244), rgb(51, 210, 242)); /* Gradiente de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+}
+
+/* Estilos para el encabezado de bienvenida */
+.welcome-heading {
+    margin: 15px auto; /* Añade margen para centrar horizontalmente y espacio arriba y abajo */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    text-align: center; /* Alineación central del texto */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+    color: rgb(91, 129, 241); /* Color del texto */
+}
+
+/* Estilos para los campos de entrada */
+.input-box,
+.input-box1 {
+    width: 259px; /* Ancho fijo de las cajas de entrada */
+    height: 30px; /* Altura fija de las cajas de entrada */
+    margin: 10px auto; /* Añade margen para centrar horizontalmente y espacio arriba y abajo */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Sin contorno al recibir foco */
+    border: none; /* Sin borde */
+    padding-left: 10px; /* Relleno interno a la izquierda */
+}
+
+/* Estilos para el enlace de "volver" */
+.forget-password {
+    margin: 10px auto; /* Añade margen para centrar horizontalmente y espacio arriba y abajo */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el enlace "Register now" */
+.register-now {
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 10px; /* Añade margen superior */
+    font-size: 0.8rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los enlaces con clase .link */
+.link {
+    color: rgb(0, 132, 255); /* Color del texto */
+}
+
+/* Estilos para los elementos con clase .flecha */
+.flecha {
+    color: rgb(0, 132, 255); /* Color del texto */
+    font-size: 1.60rem; /* Tamaño de la fuente */
+}
+
+/* Alinear verticalmente los inputs */
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo para el ícono del ojo */
+.toggle-password {
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+.login-btn {
+    width: 100%;
+}
+
+
+.input-group-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.input-box {
+    padding-left: 30px; /* Ajusta el espaciado para que no se solape con el icono */
+}
